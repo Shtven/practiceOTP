@@ -1,0 +1,92 @@
+/* === Ajuste global para asegurar que ocupe toda la pantalla === */
+html, body, #root {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  background-color: #0d1117;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* === Contenedor principal del formulario === */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e1e1e;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+  color: #f0f0f0;
+}
+
+/* === Título === */
+h2 {
+  margin-bottom: 1.5rem;
+  color: #64b5f6;
+  font-weight: 600;
+}
+
+/* === Formulario === */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.form input {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  outline: none;
+  transition: border 0.2s, background 0.3s;
+}
+
+.form input:focus {
+  border: 1px solid #64b5f6;
+  background-color: #333;
+}
+
+/* === Botón === */
+.form button {
+  padding: 10px;
+  background-color: #64b5f6;
+  color: #1e1e1e;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form button:hover {
+  background-color: #42a5f5;
+}
+
+/* === Texto inferior === */
+.small-text {
+  margin-top: 1rem;
+  font-size: 13px;
+  color: #b0b0b0;
+}
+
+.link {
+  color: #64b5f6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
